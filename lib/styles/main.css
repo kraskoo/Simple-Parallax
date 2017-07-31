@@ -1,0 +1,171 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border: 40px solid rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 40px solid #aaaaaa;
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+body, .parallax {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    background-color: transparent;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+	background-color: #F2F2F2;
+}
+
+body, #left-side-navbar > .note {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media screen and (max-height: 768px) {
+    .parallax > img {
+        max-height: 768px;
+    }
+}
+
+#button-menu {
+    background: url("/resources/menu.png") no-repeat center center;
+    background-size: 50px 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#button-menu:hover {
+    cursor: pointer;
+}
+
+#left-side-navbar {
+    width: 25vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: #111111;
+    z-index: 999;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hidden-side-navbar {
+    left: -25vw;
+}
+
+.shown-side-navbar {    
+    left: 0;
+}
+
+#left-side-navbar > #close-menu {
+    font-size: 1.8vw;
+    width: 25vw;
+    margin: 2vh 0 0 0;
+    padding-right: 2vw;
+	margin-bottom: 1.5vw;
+    height: 34px;
+    display: block;
+    color: #818181;
+    text-align: right;
+}
+
+#left-side-navbar > .note {
+    font-size: 0.9vw;
+    display: block;
+    color: #818181;
+    background-color: #111111;
+    text-decoration: none;
+    text-align: left;
+    margin: 12px 0;
+}
+
+#left-side-navbar > .note:hover, #left-side-navbar > #close-menu:hover, #left-side-navbar > #close-menu:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.arrows {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	z-index: 999;
+}
+
+.arrows:hover {
+	cursor: pointer;
+}
+
+#left-arrow {
+	background: url("/resources/left-arrow.png") no-repeat center center;
+	left: 0;
+	display: none;
+}
+
+#right-arrow {
+	background: url("/resources/right-arrow.png") no-repeat center center;
+	right: 0;
+	display: none;
+}
+
+#text-below {
+	position: absolute;
+	padding-top: 15px;
+	width: 250px;
+	height: 500px;
+	z-index: 899;
+	left: 25px;
+	top: 50px;
+	font-size: 16px;
+	background-color: #F2F2F2;
+}
