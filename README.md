@@ -2,7 +2,7 @@
 
 ## Description
 
-1. Separates one page on multiple parts, for each part spread on full screen.
+1. Separates one page on multiple parts, for each part fit on full screen.
 2. Supports multiple pages and menu for navigation between them.
 
 ### Additional information
